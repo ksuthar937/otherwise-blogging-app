@@ -1,0 +1,32 @@
+{
+  "name": "otherwise-blogging-app",
+  "version": "1.0.0",
+  "description": "blogging platform",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksuthar937/otherwise-blogging-app.git"
+  },
+  "author": "kailash suthar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksuthar937/otherwise-blogging-app/issues"
+  },
+  "homepage": "https://github.com/ksuthar937/otherwise-blogging-app#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.2",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1"
+  }
+}
